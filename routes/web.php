@@ -21,3 +21,5 @@ Route::get('/', 'AdminController@index' )->name('admin.dashboard');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/products', 'ProductsController');
+
+Route::get('/user/profile/{user}', 'UserProfileController@index')->name('user_profile');
